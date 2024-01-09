@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <!--STRUCTURE USING THE BEM METHODOLOGY-->
+
+    <!--MAIN CONTAINER-->
+    <div class="container">
+      <!--CONTAINER FORM-->
+      <div action="index.html" class="container-form">
+        <!--CONTAINER FORM TITLE-->
+        <div class="container-title-form">
+          <button
+            type="button"
+            id="signIn"
+            class="container-title-form__button active"
+          >
+            SIGN IN
+          </button>
+          <button
+            type="button"
+            id="signUp"
+            class="container-title-form__button"
+          >
+            SIGN UP
+          </button>
+        </div>
+        <!--FORM SING IN-->
+        <form id="formSingIn" class="form">
+          <!--GROUP INPUT-->
+          <div class="form__group-input">
+            <label for="user" class="group-input__label">USERNAME</label>
+            <input type="text" id="user" class="group-input__input" />
+          </div>
+          <!--GROUP INPUT-->
+          <div class="form__group-input">
+            <label for="pass" class="group-input__label">PASSWORD</label>
+            <input type="password" id="pass" class="group-input__input" />
+          </div>
+          <!--GROUP CHECK-->
+          <div class="form__group-radio">
+            <button type="button" class="group-radio__button">
+              <input type="radio" id="radio" class="button__radio" />
+              NO
+            </button>
+            <p class="group-radio__text">KEEP ME SIGNED IN</p>
+          </div>
+          <button type="button" class="form__button">SIGN IN</button>
+          <!--CONTAINER FORGOT-->
+        <div class="form__container-forgot">
+          <a href="#" class="container-forgot__link">Forgot your password?</a>
+        </div>
+        </form>
+        
+        <!--FORM SING UP-->
+        <form id="formSingUp" class="form show">
+          <!--GROUP INPUT-->
+          <div class="form__group-input">
+            <label for="name" class="group-input__label">FULL NAME</label>
+            <input type="text" id="name" class="group-input__input" />
+          </div>
+          <!--GROUP INPUT-->
+          <div class="form__group-input">
+            <label for="email" class="group-input__label">EMAIL</label>
+            <input type="email" id="email" class="group-input__input" />
+          </div>
+          <!--GROUP INPUT-->
+          <div class="form__group-input">
+            <label for="passSignUp" class="group-input__label">PASSWORD</label>
+            <input type="password" id="passSignUp" class="group-input__input" />
+          </div>
+          <!--GROUP INPUT-->
+          <div class="form__group-input">
+            <label for="passConfirm" class="group-input__label">CONFIRM PASSWORD</label>
+            <input type="password" id="passConfirm" class="group-input__input" />
+          </div>
+          <button type="button" class="form__button">SIGN UP</button>
+        </form>
+      </div>
+    </div>
+    <script src="toggleSession.js"></script>
+  </body>
+</html>
